@@ -170,6 +170,25 @@ hr {
     width: 270px;
 }
 
+/* Link styles */
+a:link, a:visited {
+    color: #989898;
+    background-color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fff;
+    font-weight: bold;
+
+}
+
+/* Would need to add javascript to make it stay this color after being selected */
+
+a:active {
+    background-color: #111;
+}
+
 
 /* Footer */
 
