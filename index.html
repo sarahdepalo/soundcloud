@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discover on SoundCloud</title>
-    <link rel ="shortcut icon" type ="image/png" href ="imgs/logo.png">
+    <link rel ="shortcut icon" type ="icon" href ="imgs/favicon.ico">
     <!-- Stylsheet -->
     <link rel="stylesheet" href="styles/style.css">
     <!-- Fonts -->
@@ -40,14 +40,28 @@
         <div class="col fluid">
             <h2>More of what you like</h2>
             <p>Suggestions based on what you've liked or played</p>
-            <div class="continue-listening container">
-                <img src ="imgs/album1.png">
-                <!-- <p>Related tracks</p> -->
-                <img src ="imgs/album2.png">
-
-                <img src ="imgs/album3.png">
-    
-                <img src ="imgs/album4.png">
+            <div class="container">
+                <!--Put img + p in their own div and have the parent div set up spacing  - try flex-grow -->
+                <div class="image-container">
+                    <img src ="imgs/album1.png">
+                    <h4>Old Songs But It's L...</h4>
+                    <p>Related tracks</p>
+                </div>
+                <div class="image-container">
+                    <img src ="imgs/album2.png">
+                    <h4>Chance the Rapper...</h4>
+                    <p>Related tracks</p>
+                </div>
+                <div class="image-container">
+                    <img src ="imgs/album3.png">
+                    <h4>Avatar the Last Air...</h4>
+                    <p>Related tracks</p>
+                </div>
+                <div class="image-container">
+                    <img src ="imgs/album4.png">
+                    <h4>Dominic Fike - King...</h4>
+                    <p>Related tracks</p>
+                </div>
    
                 
             </div>
@@ -56,14 +70,27 @@
            
             <h2>Charts: New & Hot</h2>
             <p>Up-and-coming tracks on SoundCloud</p>
-            <div class="continue-listening container">
-                <img src ="imgs/new-music1.png">
-                    <!-- <p>Related tracks</p> -->
-                <img src ="imgs/new-music2.png">
-    
-                <img src ="imgs/new-music3.png">
-        
-                <img src ="imgs/new-music4.png">
+            <div class="container">
+                <div class="image-container">
+                    <img src ="imgs/new-music1.png">
+                    <h4>All music genres</h4>
+                    <p>New & hot</p>
+                </div>
+                <div class="image-container">
+                    <img src ="imgs/new-music2.png">
+                    <h4>Alternative Rock</h4>
+                    <p>New & hot</p>
+                </div>
+                <div class="image-container">
+                    <img src ="imgs/new-music3.png">
+                    <h4>Ambient</h4>
+                    <p>New & hot</p>
+                </div>
+                <div class="image-container">
+                    <img src ="imgs/new-music4.png">
+                    <h4>Classical</h4>
+                    <p>New & hot</p>
+                </div>
        
             </div>
             <hr>
@@ -76,8 +103,15 @@
           
         <aside class="col fixed">
             <h3>Who to follow</h3>
+            <div class= "who-to-follow">
+                <img src = "imgs/asap.png">
+                <img src = "imgs/mac-miller.png">
+                <img src = "imgs/outmind.png">
+            </div>
+            <!-- These are also in an ul with display table?  Title is display flex with flex direction row and align-items center?-->
             <hr>
             <h3>27 likes</h3>
+            <!--The play button and like are in a ul with display inline. Each section is an artcile with display block.-->
             <hr>
             <h3>Listening history</h3>
             <hr>
